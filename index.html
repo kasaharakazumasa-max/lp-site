@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>大切なご家族へ笑顔でつなぐ相続｜笠原行政書士事務所</title>
+  <meta name="description" content="【初回相談無料】笠原行政書士事務所は、お年寄りやそのご家族に寄り添うアットホームな事務所です。遺言書作成、遺産分割、出張相談も承ります。難しい言葉を使わず親切・丁寧にご説明いたします。">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+
+  <!-- ヘッダー -->
+  <header class="header" id="main-header">
+    <div class="container header-inner">
+      <div class="logo-area" id="logo-container">
+        <span class="logo-badge" id="logo-badge-label">初回相談無料</span>
+        <div>
+          <span class="logo-sub" id="logo-subtext">笑顔でつなぐ、まごころ相続</span>
+          <h1 class="logo-text" id="logo-title">笠原行政書士事務所</h1>
+        </div>
+      </div>
+      
+      <!-- アクセシビリティ：文字サイズ切り替え機能（シニア層への極上の配慮） -->
+      <div class="accessibility-ctrl" id="text-size-control" style="display: flex; align-items: center; gap: 8px;">
+        <span style="font-size: 0.85rem; font-weight: bold; color: var(--color-text-muted);">文字の大きさ：</span>
+        <button onclick="changeFontSize('normal')" id="btn-size-normal" style="padding: 4px 10px; font-size: 0.85rem; cursor: pointer; border-radius: 4px; border: 1px solid var(--color-border); background-color: #fff; font-weight: bold;">標準</button>
+        <button onclick="changeFontSize('large')" id="btn-size-large" style="padding: 4px 10px; font-size: 0.95rem; cursor: pointer; border-radius: 4px; border: 1px solid var(--color-primary); background-color: #fff; color: var(--color-primary); font-weight: bold;">大</button>
+        <button onclick="changeFontSize('xlarge')" id="btn-size-xlarge" style="padding: 4px 10px; font-size: 1.05rem; cursor: pointer; border-radius: 4px; border: 1.5px solid var(--color-primary-dark); background-color: #fff; color: var(--color-primary-dark); font-weight: bold;">特大</button>
+      </div>
+
+      <div class="header-contact" id="header-contact-info">
+        <div class="header-tel" id="header-tel-number">
+          <span class="header-tel-label" id="header-tel-tag">お電話はこちら</span>
+          <a href="tel:0725-24-1617">0725-24-1617</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ファーストビュー (ヒーローセクション) -->
+  <section class="hero" id="hero-section">
+    <div class="container hero-inner">
+      <div class="hero-content" id="hero-main-content">
+        <span class="hero-badge" id="hero-top-badge">ご自宅への出張相談も喜んでお伺いします</span>
+        <h2 class="hero-title" id="hero-main-title">
+          難しい手続きは、<br>
+          すべてお任せください。<br>
+          <span class="highlight" id="hero-highlight-text">「安心の相続」を笑顔で。</span>
+        </h2>
+        <p class="hero-lead" id="hero-lead-text">
+          「遺言書はどう書くの？」「何から始めればいい？」<br>
+          どんなに小さなお悩みも、親戚の家に遊びに行くような気持ちで、お気軽にご相談ください。
+        </p>
+        <div class="hero-cta" id="hero-cta-area">
+          <a href="#contact" class="btn-large btn-green" id="hero-btn-contact">
+            <span class="btn-icon">✉</span> まずは無料相談してみる
+          </a>
+          <p class="hero-cta-note" id="hero-cta-hint">※お電話・メール・ご訪問でのご相談、すべて初回無料です</p>
+        </div>
+      </div>
+      <div class="hero-image-wrapper" id="hero-image-container">
+        <img src="assets/hero.png" alt="笑顔で行政書士と相談するシニア夫婦の温かいイラスト" id="hero-image">
+      </div>
+    </div>
+  </section>
+
+  <!-- お悩みチェックリスト（共感セクション） -->
+  <section class="section" id="worries-section">
+    <div class="container">
+      <div class="worries-box" id="worries-card">
+        <h3 class="worries-title" id="worries-card-title">このようなことで、お悩みではありませんか？</h3>
+        <ul class="worries-list" id="worries-check-list">
+          <li class="worries-item" id="worry-1">
+            <span class="worries-icon" id="worry-1-icon">✔</span>
+            遺言書を作りたいけれど、書き方がわからない
+          </li>
+          <li class="worries-item" id="worry-2">
+            <span class="worries-icon" id="worry-2-icon">✔</span>
+            相続の手続き、何から手をつければいいの？
+          </li>
+          <li class="worries-item" id="worry-3">
+            <span class="worries-icon" id="worry-3-icon">✔</span>
+            家族が揉めないように、今から準備をしておきたい
+          </li>
+          <li class="worries-item" id="worry-4">
+            <span class="worries-icon" id="worry-4-icon">✔</span>
+            相談したいけれど、足腰が弱くて事務所に行けない
+          </li>
+          <li class="worries-item" id="worry-5">
+            <span class="worries-icon" id="worry-5-icon">✔</span>
+            専門用語ばかりの難しい説明はよくわからない…
+          </li>
+          <li class="worries-item" id="worry-6">
+            <span class="worries-icon" id="worry-6-icon">✔</span>
+            他の窓口で「たらい回し」にされて困っている
+          </li>
+        </ul>
+        <div class="worries-conclusion" id="worries-conclusion-text">
+          そのお悩み、すべて「笠原行政書士事務所」へお話しください！<br>
+          お一人おひとりのペースに合わせて、ゆっくり、優しくサポートいたします。
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 当事務所の特徴（アットホーム感・強み） -->
+  <section class="section section-accent" id="features-section">
+    <div class="container">
+      <h3 class="section-title" id="features-section-title">笠原行政書士事務所が選ばれる3つの理由</h3>
+      <div class="features-grid" id="features-grid-container">
+        
+        <!-- 特徴1 -->
+        <div class="feature-card" id="feature-card-1">
+          <span class="feature-number" id="feat-num-1">1</span>
+          <h4 class="feature-title" id="feat-title-1">難しい専門用語は使いません</h4>
+          <p class="feature-desc" id="feat-desc-1">
+            法律の難しい言葉は使わず、図やイラストを交えて、ゆっくり丁寧に説明します。わからないことは何度でもご質問ください。
+          </p>
+        </div>
+
+        <!-- 特徴2 -->
+        <div class="feature-card" id="feature-card-2">
+          <span class="feature-number" id="feat-num-2">2</span>
+          <h4 class="feature-title" id="feat-title-2">ご自宅への出張相談も無料</h4>
+          <p class="feature-desc" id="feat-desc-2">
+            「外出が難しい」「住み慣れた自宅で落ち着いて話したい」という方のために、行政書士がご自宅や近くの喫茶店などへ直接お伺いいたします。
+          </p>
+        </div>
+
+        <!-- 特徴3 -->
+        <div class="feature-card" id="feature-card-3">
+          <span class="feature-number" id="feat-num-3">3</span>
+          <h4 class="feature-title" id="feat-title-3">お茶を飲むような温かい雰囲気</h4>
+          <p class="feature-desc" id="feat-desc-3">
+            私たちは「堅苦しい行政書士事務所」ではありません。お茶を飲みながら、昔話をするような温かい雰囲気で、ご家族の想いをじっくりお聴きします。
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- サービス内容と料金プラン -->
+  <section class="section" id="prices-section">
+    <div class="container">
+      <h3 class="section-title" id="prices-section-title">明朗で分かりやすい料金プラン</h3>
+      <p class="price-intro" id="prices-intro-text">
+        「後から高額な請求が来たらどうしよう…」という不安を取り除くため、<br>
+        事前にお見積もりを提示し、納得いただいてからお手続きを進めます。
+      </p>
+      
+      <table class="price-table" id="price-table-element">
+        <thead>
+          <tr>
+            <th id="th-service-name">ご相談・サポート内容</th>
+            <th id="th-service-price">料金（税込）</th>
+            <th id="th-service-desc">備考</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <span class="price-name" id="price-name-1">初回相続相談</span>
+              <span class="price-name-sub" id="price-sub-1">ご自宅への出張・訪問相談も含む</span>
+            </td>
+            <td>
+              <span class="price-val" id="price-val-1">0円 <span>(完全無料)</span></span>
+            </td>
+            <td class="price-desc" id="price-desc-1">お時間制限はございません。まずは不安をお聞かせください。</td>
+          </tr>
+          <tr>
+            <td>
+              <span class="price-name" id="price-name-2">遺言書作成サポート</span>
+              <span class="price-name-sub" id="price-sub-2">公証役場とのやり取り、文案作成すべて込み</span>
+            </td>
+            <td>
+              <span class="price-val" id="price-val-2">55,000円〜</span>
+            </td>
+            <td class="price-desc" id="price-desc-2">ご家族への感謝と想いがしっかり伝わる遺言書を作成します。</td>
+          </tr>
+          <tr>
+            <td>
+              <span class="price-name" id="price-name-3">相続人・財産調査パック</span>
+              <span class="price-name-sub" id="price-sub-3">戸籍謄本の収集、財産目録の作成</span>
+            </td>
+            <td>
+              <span class="price-val" id="price-val-3">88,000円〜</span>
+            </td>
+            <td class="price-desc" id="price-desc-3">面倒で複雑な戸籍集めを、すべて代行いたします。</td>
+          </tr>
+          <tr>
+            <td>
+              <span class="price-name" id="price-name-4">遺産分割協議書作成</span>
+              <span class="price-name-sub" id="price-sub-4">話し合った内容を確実な書類に</span>
+            </td>
+            <td>
+              <span class="price-val" id="price-val-4">66,000円〜</span>
+            </td>
+            <td class="price-desc" id="price-desc-4">後々のトラブルを防ぐための、法的に正しい書類を作ります。</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- 行政書士の紹介（信頼とアットホーム） -->
+  <section class="section section-accent" id="profile-section">
+    <div class="container">
+      <h3 class="section-title" id="profile-section-title">ご相談をお聞きする行政書士</h3>
+      <div class="profile-box" id="profile-card">
+        <div class="profile-image-area" id="profile-image-container">
+          <img src="assets/scrivener.png" alt="行政書士 笠原和真の似顔絵イラスト" id="profile-image">
+          <div>
+            <span class="profile-role" id="profile-role-tag">笠原行政書士事務所 代表</span>
+            <div class="profile-name" id="profile-name-text">笠原 和真</div>
+            <div class="profile-name-kana" id="profile-kana-text">（かさはら　かずまさ）</div>
+          </div>
+        </div>
+        <div class="profile-content" id="profile-main-content">
+          <h4 class="profile-message-title" id="profile-message-headline">
+            「早く相談すればよかった」<br>
+            そう言って笑顔でお帰りいただくのが、私の最高の喜びです。
+          </h4>
+          <p class="profile-text" id="profile-message-body-1">
+            相続の手続きは、書類集めや法律のルールなど、慣れないことばかりで本当に大変です。不安で眠れない夜を過ごされる方もいらっしゃいます。
+          </p>
+          <p class="profile-text" id="profile-message-body-2">
+            私は、ただ手続きをするだけでなく、ご家族がこれからも仲良く笑顔で暮らしていけるような「温かい相続」を目指しています。
+          </p>
+          <p class="profile-text" id="profile-message-body-3">
+            どんな小さなお悩みでも構いません。「こんなこと聞いていいのかしら？」と思わずに、どうぞお気軽にお声がけくださいね。
+          </p>
+          
+          <dl class="profile-credentials" id="profile-credentials-list">
+            <dt id="dt-credentials-title">保有資格・所属</dt>
+            <dd id="dd-credential-1">・行政書士（登録番号14261277号）</dd>
+            <dd id="dd-credential-2">・大阪府行政書士会堺支部</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ご相談の流れ -->
+  <section class="section" id="steps-section">
+    <div class="container">
+      <h3 class="section-title" id="steps-section-title">相談から解決までの4ステップ</h3>
+      
+      <div class="steps-container" id="steps-container-box">
+        <!-- ステップ1 -->
+        <div class="step-card" id="step-card-1">
+          <div class="step-num" id="step-num-1">
+            ステップ<span>1</span>
+          </div>
+          <div class="step-content" id="step-content-1">
+            <h4 class="step-title" id="step-title-1">まずはお気軽にご連絡ください</h4>
+            <p class="step-desc" id="step-desc-1">
+              お電話（<a href="tel:0725-24-1617"><b>0725-24-1617</b></a>）または、このページ下部のお問い合わせフォームからご連絡ください。
+              「相続のことでちょっと聞きたい」だけで大歓迎です。
+            </p>
+          </div>
+        </div>
+
+        <!-- ステップ2 -->
+        <div class="step-card" id="step-card-2">
+          <div class="step-num" id="step-num-2">
+            ステップ<span>2</span>
+          </div>
+          <div class="step-content" id="step-content-2">
+            <h4 class="step-title" id="step-title-2">お話をお聞きします（訪問・出張も可）</h4>
+            <p class="step-desc" id="step-desc-2">
+              当事務所、またはご自宅等でお話しをお伺いします。
+              美味しいお茶をご用意しますので、リラックスして何でもお話しください。
+              （初回相談は完全に無料です）
+            </p>
+          </div>
+        </div>
+
+        <!-- ステップ3 -->
+        <div class="step-card" id="step-card-3">
+          <div class="step-num" id="step-num-3">
+            ステップ<span>3</span>
+          </div>
+          <div class="step-content" id="step-content-3">
+            <h4 class="step-title" id="step-title-3">解決へのプランと明確なお見積もりを提示</h4>
+            <p class="step-desc" id="step-desc-3">
+              お伺いした内容をもとに、最も分かりやすく、ご家族が納得できる解決プランを提案します。
+              かかる費用も事前にはっきりと提示いたします。
+            </p>
+          </div>
+        </div>
+
+        <!-- ステップ4 -->
+        <div class="step-card" id="step-card-4">
+          <div class="step-num" id="step-num-4">
+            ステップ<span>4</span>
+          </div>
+          <div class="step-content" id="step-content-4">
+            <h4 class="step-title" id="step-title-4">手続き開始・まごころサポート</h4>
+            <p class="step-desc" id="step-desc-4">
+              プランにご納得いただけましたら、手続きを開始します。
+              戸籍の収集から各種書類の作成まで、私たちが心を込めて代行いたします。
+              お客様が役所等へ何度も足を運ぶ必要はありません。
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- よくあるご質問 (FAQ) -->
+  <section class="section section-accent" id="faq-section">
+    <div class="container">
+      <h3 class="section-title" id="faq-section-title">よくあるご質問</h3>
+      
+      <div class="faq-list" id="faq-accordion">
+        <div class="faq-item" id="faq-item-1">
+          <div class="faq-q" id="faq-q-1">本当に初回相談は無料なのですか？</div>
+          <div class="faq-a" id="faq-a-1">
+            はい、完全に無料です。ご相談時間にも制限は設けておりませんので、気が済むまでゆっくりお話しいただけます。ご自宅にお伺いした場合の「出張料」や「交通費」もいただいておりませんので、安心してご活用ください。
+          </div>
+        </div>
+
+        <div class="faq-item" id="faq-item-2">
+          <div class="faq-q" id="faq-q-2">体が悪く、事務所に行けないのですが大丈夫ですか？</div>
+          <div class="faq-a" id="faq-a-2">
+            全く問題ありません。当事務所の行政書士が、喜んでお客様のご自宅へお伺いいたします。車椅子の方や、入院中・施設に入所中の方のもとへも多数の訪問実績がございます。
+          </div>
+        </div>
+
+        <div class="faq-item" id="faq-item-3">
+          <div class="faq-q" id="faq-q-3">まだ何も決まっていない段階で相談してもいいですか？</div>
+          <div class="faq-a" id="faq-a-3">
+            もちろんです！「何から始めていいかわからない」「なんとなく将来が不安」という段階でのご相談が、実は一番おすすめです。お話を整理し、これからやるべきことを優しくお伝えします。
+          </div>
+        </div>
+
+        <div class="faq-item" id="faq-item-4">
+          <div class="faq-q" id="faq-q-4">他の専門家（税理士や司法書士）を紹介してもらうことはできますか？</div>
+          <div class="faq-a" id="faq-a-4">
+            はい、可能です。当事務所は、親切で温かい相続専門の税理士（相続税の申告用）や、司法書士（不動産登記用）と強固なネットワークを持っています。窓口を一つにまとめ、私たちが連携してワンストップで対応いたしますので、お客様があちこちへ出向く手間はありません。
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- お問い合わせフォーム ＆ アクセス -->
+  <section class="section" id="contact">
+    <div class="container">
+      <h3 class="section-title" id="contact-section-title">無料相談のお申し込み</h3>
+      
+      <div class="contact-grid" id="contact-grid-container">
+        
+        <!-- お電話・アクセス案内 -->
+        <div class="contact-info" id="contact-info-card">
+          <h4 class="contact-info-title" id="contact-info-headline">お電話でのご相談・お申し込み</h4>
+          <div class="tel-display" id="tel-display-box">
+            <span style="font-size: 0.9rem; font-weight: bold; color: var(--color-primary-dark); display: block; margin-bottom: 5px;">【お電話でのご相談はこちら】</span>
+            <div class="tel-num" id="tel-large-link"><a href="tel:0725-24-1617" style="color: var(--color-primary-dark);">0725-24-1617</a></div>
+            <p class="tel-time" id="tel-working-hours">受付時間：朝10:00 〜 夜18:00</p>
+          </div>
+          
+          <h4 class="contact-info-title" id="access-headline" style="margin-top: 30px;">事務所アクセス</h4>
+          <p id="address-text">
+            <b>笠原行政書士事務所</b><br>
+            大阪府和泉市府中町６－１３－１８３<br>
+            （ご訪問の際は、事前にお電話等でご連絡ください）
+          </p>
+          
+          <div class="map-wrapper" id="map-container">
+            <!-- 商店街風の温かいアクセスマップ（お年寄りが迷わないよう、Google Map の代わりにアットホームなダミー地図を表示） -->
+            <div style="background-color: #faf6f0; padding: 30px 20px; text-align: center; border: 1px dashed var(--color-border);" id="dummy-map-graphic">
+              <span style="font-size: 2.5rem; display: block; margin-bottom: 10px;">🗺️</span>
+              <span style="font-weight: bold; color: var(--color-primary-dark); display: block;">【出張相談も大歓迎です】</span>
+              <p style="font-size: 0.95rem; color: var(--color-text-muted); margin-top: 10px; line-height: 1.6;">
+                当事務所へのご来所が難しい場合は、<br>
+                ご自宅やご指定の場所まで無料で出張相談にお伺いします。<br>
+                足腰に不安がある方も、どうぞお気軽にお申し付けください。
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- メールフォーム -->
+        <div class="form-box" id="form-container">
+          <h4 class="contact-info-title" id="form-headline">メールでのご相談（24時間受付）</h4>
+          <form action="#" method="POST" id="contact-form" onsubmit="alert('デモ送信が完了しました！ご相談ありがとうございます。'); return false;">
+            
+            <div class="form-group" id="fg-name">
+              <label for="name" class="form-label" id="label-name">お名前<span class="badge-required" id="req-name">必須</span></label>
+              <input type="text" id="name" name="name" class="form-control" placeholder="例：ひだまり 太郎" required>
+            </div>
+
+            <div class="form-group" id="fg-tel">
+              <label for="phone" class="form-label" id="label-phone">お電話番号<span class="badge-required" id="req-phone">必須</span></label>
+              <input type="tel" id="phone" name="phone" class="form-control" placeholder="例：090-1234-5678" required>
+            </div>
+
+            <div class="form-group" id="fg-email">
+              <label for="email" class="form-label" id="label-email">メールアドレス</label>
+              <input type="email" id="email" name="email" class="form-control" placeholder="例：taro@example.com">
+            </div>
+
+            <div class="form-group" id="fg-message">
+              <label for="message" class="form-label" id="label-message">ご相談内容（かんたんで結構です）</label>
+              <textarea id="message" name="message" class="form-control" placeholder="例：遺言書を作りたいと考えています。一度自宅に来て話を聞いてほしいです。"></textarea>
+            </div>
+
+            <div class="form-submit-wrapper" id="form-submit-area">
+              <button type="submit" class="btn-large" id="btn-submit-form">
+                送信して無料相談を予約する
+              </button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- フッター -->
+  <footer class="footer" id="main-footer">
+    <div class="container" id="footer-container">
+      <div class="footer-logo" id="footer-logo-text">笠原行政書士事務所</div>
+      <p id="footer-address">大阪府和泉市府中町６－１３－１８３ / 電話：0725-24-1617</p>
+      <p class="footer-copy" id="footer-copyright">&copy; 2026 笠原行政書士事務所 All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- スマートフォン向け常時固定のお電話ボタン（シニア向けLPの必須要素） -->
+  <div class="floating-contact" id="mobile-floating-bar">
+    <a href="tel:0725-24-1617" class="btn-large btn-green floating-btn" id="mobile-floating-tel-btn">
+      <span class="btn-icon">📞</span> 今すぐ電話で無料相談する
+    </a>
+  </div>
+
+  <!-- アクセシビリティ用JavaScript：文字サイズ変更機能 -->
+  <script>
+    function changeFontSize(size) {
+      const body = document.body;
+      const btnNormal = document.getElementById('btn-size-normal');
+      const btnLarge = document.getElementById('btn-size-large');
+      const btnXlarge = document.getElementById('btn-size-xlarge');
+
+      // スタイルのリセット
+      body.style.fontSize = '';
+      btnNormal.style.backgroundColor = '#fff';
+      btnNormal.style.color = 'var(--color-text-main)';
+      btnNormal.style.border = '1px solid var(--color-border)';
+
+      btnLarge.style.backgroundColor = '#fff';
+      btnLarge.style.color = 'var(--color-primary)';
+      btnLarge.style.border = '1px solid var(--color-primary)';
+
+      btnXlarge.style.backgroundColor = '#fff';
+      btnXlarge.style.color = 'var(--color-primary-dark)';
+      btnXlarge.style.border = '1.5px solid var(--color-primary-dark)';
+
+      if (size === 'normal') {
+        body.style.fontSize = '19px';
+        btnNormal.style.backgroundColor = 'var(--color-bg-accent)';
+        btnNormal.style.color = 'var(--color-primary-dark)';
+        btnNormal.style.border = '1.5px solid var(--color-primary-dark)';
+      } else if (size === 'large') {
+        body.style.fontSize = '23px';
+        btnLarge.style.backgroundColor = 'var(--color-primary)';
+        btnLarge.style.color = '#fff';
+      } else if (size === 'xlarge') {
+        body.style.fontSize = '27px';
+        btnXlarge.style.backgroundColor = 'var(--color-primary-dark)';
+        btnXlarge.style.color = '#fff';
+      }
+    }
+
+    // デフォルトで「大（23px）」を選択状態にしておく（シニア層が最初から見やすくなるように）
+    document.addEventListener("DOMContentLoaded", function() {
+      changeFontSize('large');
+    });
+  </script>
+</body>
+</html>
