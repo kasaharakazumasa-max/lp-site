@@ -906,9 +906,33 @@ textarea.form-control {
     display: none; /* スマホではフローティングボタンがあるためヘッダー連絡先は隠す */
   }
 
-  .price-table {
+  /* 料金表をスマホで読みやすいカード型に縦積み化 */
+  .price-table, .price-table tbody, .price-table tr, .price-table td {
     display: block;
-    overflow-x: auto;
+    width: 100%;
+  }
+  .price-table thead {
+    display: none; /* ヘッダーを非表示 */
+  }
+  .price-table tr {
+    margin-bottom: 25px;
+    border: 2px solid var(--color-primary);
+    border-radius: var(--border-radius-medium);
+    overflow: hidden;
+  }
+  .price-table td {
+    text-align: center;
+    padding: 20px 15px !important;
+    border: none !important;
+    border-bottom: 1px dashed var(--color-border) !important;
+  }
+  .price-table td:first-child {
+    background-color: #fff8f5;
+  }
+  .price-table td:last-child {
+    border-bottom: none !important;
+    text-align: left;
+    background-color: #fcfcfc;
   }
 
   .step-card {
